@@ -3,6 +3,9 @@ description: "Web-based Process Visualization (SCADA/HMI/Dashboard) software"
 version: "1.0.0"
 url: "https://github.com/SmartLiving-Rocks/FUXA/"
 slug: "fuxa-slr"
+ingress: true
+ingress_port: 1881
+ingress_stream: true
 init: false
 arch:
   - aarch64
