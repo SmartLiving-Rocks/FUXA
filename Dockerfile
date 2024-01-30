@@ -5,6 +5,7 @@ FROM $BUILD_FROM
 RUN \
   apk add --no-cache \
     python3
+    npm
 
 # Python 3 HTTP Server serves the current working dir
 # So let's set it to our add-on persistent data directory.
