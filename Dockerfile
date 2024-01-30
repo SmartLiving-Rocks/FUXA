@@ -1,14 +1,17 @@
-# Use the official Home Assistant add-on base image
 ARG BUILD_FROM
-# FROM $BUILD_FROM
-FROM frangoteam/fuxa:latest
+FROM $BUILD_FROM
 
-# Copy your custom run script into the container
-COPY run.sh /usr/bin/run.sh
-RUN chmod +x /usr/bin/run.sh
+# Install requirements for add-on
+RUN \
+  apk add --no-cache \
+    python3
 
-# Expose the required port (change if needed)
-EXPOSE 1881
+# Python 3 HTTP Server serves the current working dir
+# So let's set it to our add-on persistent data directory.
+WORKDIR /data
 
-# Start the frangoteam/fuxa container
-CMD ["/usr/bin/run.sh"]
+# Copy data for add-on
+COPY run.sh /
+RUN chmod a+x /run.sh
+
+CMD [ "/run.sh" ]
