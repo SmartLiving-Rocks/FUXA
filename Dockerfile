@@ -1,16 +1,24 @@
-ARG BUILD_FROM
 FROM node:14
 
-# Install requirements for add-on
-RUN \
-  npm install -g --unsafe-perm @frangoteam/fuxa
+# Create app directory
+WORKDIR /usr/src/app
 
-# Python 3 HTTP Server serves the current working dir
-# So let's set it to our add-on persistent data directory.
-WORKDIR /data
+RUN git clone https://github.com/frangoteam/FUXA.git
+WORKDIR /usr/src/app/FUXA
 
-# Copy data for add-on
-COPY run.sh /
-RUN chmod a+x /run.sh
+# Install server
+WORKDIR /usr/src/app/FUXA/server
+RUN npm install
 
-CMD [ "fuxa" ]
+# Workaround for sqlite3 https://stackoverflow.com/questions/71894884/sqlite3-err-dlopen-failed-version-glibc-2-29-not-found
+RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev && \
+    apt-get autoremove -yqq --purge && \
+    apt-get clean  && \
+    rm -rf /var/lib/apt/lists/*  && \
+    npm install --build-from-source --sqlite=/usr/bin sqlite3
+
+ADD . /usr/src/app/FUXA
+
+WORKDIR /usr/src/app/FUXA/server
+EXPOSE 1881
+CMD [ "npm", "start" ]
