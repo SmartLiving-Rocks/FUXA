@@ -43,7 +43,12 @@ Add this Repository `https://github.com/SmartLiving-Rocks/FUXA/`
 - You can use `homeasssitant.local:1881` (just replace the `:8123` with `:1881`
 - Have fun
 
+![fuxa Add to Add on Store Home Assistant](/screenshot/Accessing-on-Home-Assistant.gif)
+
 ## Implement it into Home Assistant Dashboard
 You can use the https://www.home-assistant.io/dashboards/iframe/ Lovelace card
+
+https://www.home-assistant.io/dashboards/iframe/
+
 
 
