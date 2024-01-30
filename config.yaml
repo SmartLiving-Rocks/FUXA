@@ -1,7 +1,7 @@
-name: "Hello world"
-description: "My first real add-on!"
+name: "FUXA by SmartLiving.Rocks"
+description: "My second real add-on!"
 version: "1.0.0"
-slug: "hello_world"
+slug: "Web-based Process Visualization (SCADA/HMI/Dashboard) software"
 init: false
 arch:
   - aarch64
