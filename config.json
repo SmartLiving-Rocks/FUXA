@@ -1,0 +1,10 @@
+{
+  "name": "Fuxa",
+  "version": "1.0.0",
+  "slug": "fuxa",
+  "description": "Run frangoteam/fuxa in a Docker container.",
+  "startup": "before",
+  "boot": "auto",
+  "webui": "/ui",
+  "options": {}
+}
