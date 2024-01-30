@@ -1,6 +1,7 @@
 # Use the official Home Assistant add-on base image
 ARG BUILD_FROM
-FROM $BUILD_FROM
+# FROM $BUILD_FROM
+FROM frangoteam/fuxa:latest
 
 # Copy your custom run script into the container
 COPY run.sh /usr/bin/run.sh
