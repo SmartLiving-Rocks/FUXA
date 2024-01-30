@@ -6,11 +6,11 @@ Add FUXA to your Home Assistant. It is an easy web-based Process Visualization (
 ## FUXA
 FUXA is a web-based Process Visualization (SCADA/HMI/Dashboard) software. With FUXA you can create modern process visualizations with individual designs for your machines and real-time data display.
 
-![fuxa editor](https://github.com/SmartLiving-Rocks/FUXA/blob/main/screenshot/fuxa-editor.png) 
+![fuxa editor](https://raw.githubusercontent.com/SmartLiving-Rocks/FUXA/main/screenshot/fuxa-editor.png) 
 
-![fuxa ani](https://github.com/SmartLiving-Rocks/FUXA/blob/main/screenshot/fuxa-ani.gif)
+![fuxa ani](https://raw.githubusercontent.com/SmartLiving-Rocks/FUXA/main/screenshot/fuxa-ani.gif)
 
-![fuxa action](https://github.com/SmartLiving-Rocks/FUXA/blob/main/screenshot/feature-action-move.gif)
+![fuxa action](https://raw.githubusercontent.com/SmartLiving-Rocks/FUXA/main/screenshot/feature-action-move.gif)
 
 ## Features
 - Devices connectivity with Modbus RTU/TCP, Siemens S7 Protocol, OPC-UA, BACnet IP, MQTT, Ethernet/IP (Allen Bradley)
@@ -34,7 +34,7 @@ Add this Repository `https://github.com/SmartLiving-Rocks/FUXA/`
 - Click on it
 - Install the Add-on
 
- ![fuxa Add to Add on Store Home Assistant](https://github.com/SmartLiving-Rocks/FUXA/blob/main/screenshot/Installing-FUXA-on-Home-Assistant-Add-on-Store.gif)
+ ![fuxa Add to Add on Store Home Assistant](https://raw.githubusercontent.com/SmartLiving-Rocks/FUXA/main/screenshot/Installing-FUXA-on-Home-Assistant-Add-on-Store.gif)
 
 ## Start the Add-on and use FUXA
 - Press `Start`
@@ -43,12 +43,7 @@ Add this Repository `https://github.com/SmartLiving-Rocks/FUXA/`
 - You can use `homeasssitant.local:1881` (just replace the `:8123` with `:1881`)
 - Have fun! 
 
-![fuxa Add to Add on Store Home Assistant](https://github.com/SmartLiving-Rocks/FUXA/blob/main/screenshot/Accessing-on-Home-Assistant.gif)
+![fuxa Add to Add on Store Home Assistant](https://raw.githubusercontent.com/SmartLiving-Rocks/FUXA/main/screenshot/Accessing-on-Home-Assistant.gif)
 
 ## Implement it into Home Assistant Dashboard
 You can use the https://www.home-assistant.io/dashboards/iframe/ Lovelace card
-
-https://www.home-assistant.io/dashboards/iframe/
-
-
-
