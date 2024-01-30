@@ -40,8 +40,8 @@ Add this Repository `https://github.com/SmartLiving-Rocks/FUXA/`
 - Press `Start`
 - Check the `Logs`
 - Now FUXA is started and you can use it on port `1881`
-- You can use `homeasssitant.local:1881` (just replace the `:8123` with `:1881`
-- Have fun
+- You can use `homeasssitant.local:1881` (just replace the `:8123` with `:1881`)
+- Have fun! 
 
 ![fuxa Add to Add on Store Home Assistant](/screenshot/Accessing-on-Home-Assistant.gif)
 
