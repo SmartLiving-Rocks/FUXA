@@ -3,8 +3,12 @@
   "version": "1.0.0",
   "slug": "fuxa",
   "description": "Run frangoteam/fuxa in a Docker container.",
-  "startup": "before",
+  "url": "https://github.com/SmartLiving-Rocks/FUXA/",
+  "startup": "application",
+  "init": "false",
   "boot": "auto",
+  "host_network": true,
+  "privileged": ["NET_ADMIN"],
   "webui": "/ui",
   "options": {}
 }
