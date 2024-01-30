@@ -5,7 +5,8 @@ url: "https://github.com/SmartLiving-Rocks/FUXA/"
 slug: "fuxa-slr"
 ingress: true
 ingress_port: 1881
-ingress_stream: true
+ingress_stream: false
+panel_icon: mdi:dog
 init: false
 arch:
   - aarch64
