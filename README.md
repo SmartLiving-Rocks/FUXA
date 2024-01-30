@@ -31,7 +31,10 @@ Add this Repository `https://github.com/SmartLiving-Rocks/FUXA/`
 - Hit Add and then close
 - Refresh the page
 - The new Add-on `FUXA by SmartLiving.Rocks` is now visible
-- Install the 
+- Click on it
+- Install the Add-on
+
+ 
 
 ## Installing and Running
 FUXA is developed with NodeJS (backend) and Angular (frontend).
