@@ -46,3 +46,4 @@ Add this Repository `https://github.com/SmartLiving-Rocks/FUXA/`
 ## Implement it into Home Assistant Dashboard
 You can use the https://www.home-assistant.io/dashboards/iframe/ Lovelace card
 
+
