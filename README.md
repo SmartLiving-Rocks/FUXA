@@ -36,16 +36,13 @@ Add this Repository `https://github.com/SmartLiving-Rocks/FUXA/`
 
  ![fuxa Add to Add on Store Home Assistant](/screenshot/Installing-FUXA-on-Home-Assistant-Add-on-Store.gif)
 
+## Start the Add-on and use FUXA
+- Press `Start`
+- Check the `Logs`
+- Now FUXA is started and you can use it on port `1881`
+- You can use `homeasssitant.local:1881` (just replace the `:8123` with `:1881`
+- Have fun
 
-## Installing and Running
-FUXA is developed with NodeJS (backend) and Angular (frontend).
+## Implement it into Home Assistant Dashboard
+You can use the https://www.home-assistant.io/dashboards/iframe/ Lovelace card
 
-You need to have installed [Node](https://nodejs.org/en/about/previous-releases) Version 14.21.3 (npm 6.14.18) || 16.20.2 (npm 8.19.4) || 18.18.2 (npm 9.8.1).
-
-
-```
-
-Start the Server and Client (Browser) in Debug Mode
-```
-In vscode: Debug ‘Server & Client’
-```
