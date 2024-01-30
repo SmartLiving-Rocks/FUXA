@@ -21,7 +21,8 @@ FUXA is a web-based Process Visualization (SCADA/HMI/Dashboard) software. With F
 Here is a [live demo](https://frangoteam.github.io) example of FUXA editor.
 
 ## Add custom Repository to Home Assistant
-Add this Repository `https://github.com/SmartLiving-Rocks/FUXA/` 
+Add this Repository `https://github.com/SmartLiving-Rocks/FUXA/` manually or click here to add it via my Home Assistant:
+[![Open your Home Assistant instance and show the dashboard of an add-on.](https://my.home-assistant.io/badges/supervisor_addon.svg)](https://my.home-assistant.io/redirect/supervisor_addon/?addon=1a422d19_fuxa-slr&repository_url=https%3A%2F%2Fgithub.com%2FSmartLiving-Rocks%2FFUXA%2F)
 ### Here is how you do it
 - Go to Add-ons
 - Click on ADD-ON-STORE in the lower right corner (Blue Button)
