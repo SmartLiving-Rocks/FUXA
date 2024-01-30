@@ -4,6 +4,9 @@ version: "1.0.0"
 url: "https://github.com/SmartLiving-Rocks/FUXA/"
 slug: "fuxa-slr"
 webui: "http://[HOST]:[PORT:1881]/home"
+ingress: true
+ingress_port: 1881
+ingress_stream: true
 panel_icon: mdi:dog
 panel_title: FUXA
 init: false
