@@ -7,8 +7,9 @@
   "startup": "application",
   "init": "false",
   "boot": "auto",
-  "host_network": true,
-  "privileged": ["NET_ADMIN"],
-  "webui": "/ui",
-  "options": {}
+  "ports": {
+    "1881/tcp": 1881
+  },
+  "options": {},
+  "schema": {}
 }
