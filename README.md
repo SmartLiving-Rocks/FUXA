@@ -34,7 +34,8 @@ Add this Repository `https://github.com/SmartLiving-Rocks/FUXA/`
 - Click on it
 - Install the Add-on
 
- 
+ ![fuxa Add to Add on Store Home Assistant](/screenshot/Installing-FUXA-on-Home-Assistant-Add-on-Store.gif)
+
 
 ## Installing and Running
 FUXA is developed with NodeJS (backend) and Angular (frontend).
