@@ -1,7 +1,7 @@
 name: "FUXA by SmartLiving.Rocks"
-description: "My second real add-on!"
+description: "Web-based Process Visualization (SCADA/HMI/Dashboard) software"
 version: "1.0.0"
-slug: "Web-based Process Visualization (SCADA/HMI/Dashboard) software"
+slug: "fuxa-slr"
 init: false
 arch:
   - aarch64
