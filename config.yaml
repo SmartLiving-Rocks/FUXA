@@ -13,6 +13,8 @@ arch:
   - armhf
   - armv7
   - i386
+map:
+  - share:rw
 startup: services
 ports:
   1881/tcp: 1881
