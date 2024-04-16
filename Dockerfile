@@ -11,7 +11,7 @@ WORKDIR /usr/src/app/FUXA/server
 RUN npm install
 
 # Workaround for sqlite3 (if needed)
-Check if the issue persists with the chosen Node.js version
+# Check if the issue persists with the chosen Node.js version
 RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev && \
     apt-get autoremove -yqq --purge && \
     apt-get clean  && \
