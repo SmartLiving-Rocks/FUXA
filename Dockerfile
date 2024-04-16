@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev && \
     npm install --build-from-source --sqlite=/usr/bin sqlite3
 
 # Copy FUXA files
-WORKDIR /usr/src/app/FUXA
+WORKDIR /share/usr/src/app/FUXA
 COPY . .
 
 # Set up persistent volume
