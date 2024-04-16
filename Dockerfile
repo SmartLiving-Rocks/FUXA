@@ -19,6 +19,6 @@ RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev && \
 
 ADD . /usr/src/app/FUXA
 
-WORKDIR /config/FUXA/server
+WORKDIR /usr/src/app/FUXA/server
 # EXPOSE 1881
 CMD [ "npm", "start" ]
