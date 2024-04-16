@@ -1,31 +1,24 @@
 FROM node:14
 
-# Define persistent storage volume (replace with your actual path)
-VOLUME ["/share/app"]
+# Create app directory
+WORKDIR /usr/src/app
 
-# Create app directory within the shared folder
-WORKDIR /share/app
-
-# Clone the repository
 RUN git clone https://github.com/frangoteam/FUXA.git
+WORKDIR /usr/src/app/FUXA
 
-# Install server dependencies
-WORKDIR /share/app/FUXA/server
+# Install server
+WORKDIR /usr/src/app/FUXA/server
 RUN npm install
 
-# Workaround for sqlite3 (if needed)
-# Check if the issue persists with the chosen Node.js version
+# Workaround for sqlite3 https://stackoverflow.com/questions/71894884/sqlite3-err-dlopen-failed-version-glibc-2-29-not-found
 RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev && \
     apt-get autoremove -yqq --purge && \
     apt-get clean  && \
     rm -rf /var/lib/apt/lists/*  && \
     npm install --build-from-source --sqlite=/usr/bin sqlite3
 
-# Copy project files (excluding node_modules)
-COPY --from=source . /share/app/FUXA
+ADD . /usr/src/app/FUXA
 
-# Switch back to the server directory (optional)
-WORKDIR /share/app/FUXA/server
-
-# EXPOSE 1881  # This line is commented out, potentially unnecessary
+WORKDIR /usr/src/app/FUXA/server
+# EXPOSE 1881
 CMD [ "npm", "start" ]
