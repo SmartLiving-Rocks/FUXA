@@ -1,13 +1,13 @@
 FROM node:14
 
 # Create app directory
-WORKDIR /share/usr/src/app
+WORKDIR /usr/src/app
 
 RUN git clone https://github.com/frangoteam/FUXA.git
-WORKDIR /share/usr/src/app/FUXA
+WORKDIR /usr/src/app/FUXA
 
 # Install server
-WORKDIR /share/usr/src/app/FUXA/server
+WORKDIR /usr/src/app/FUXA/server
 RUN npm install
 
 RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev && \
@@ -16,7 +16,7 @@ RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev && \
     rm -rf /var/lib/apt/lists/*  && \
     npm install --build-from-source --sqlite=/usr/bin sqlite3
 
-#ADD . /usr/src/app/FUXA
+ADD . /usr/src/app/FUXA
 
 WORKDIR /share/usr/src/app/FUXA/server
 # EXPOSE 1881
