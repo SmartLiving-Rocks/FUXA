@@ -20,7 +20,6 @@ WORKDIR /share/usr/src/app/FUXA
 COPY . .
 
 # Set up persistent volume
-# VOLUME /usr/src/app/FUXA/server/map/share
 VOLUME [ "/share" ]
 
 # Set working directory and start server
