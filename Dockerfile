@@ -21,8 +21,8 @@ COPY . .
 
 # Set up persistent volume
 # VOLUME /usr/src/app/FUXA/server/map/share
-VOLUME [ "/data" ]
+VOLUME [ "/share" ]
 
 # Set working directory and start server
-WORKDIR /usr/src/app/FUXA/server
+WORKDIR /share/usr/src/app/FUXA/server
 CMD [ "npm", "start" ]
