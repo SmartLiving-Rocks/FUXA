@@ -1,13 +1,13 @@
 FROM node:14
 
 # Create app directory
-WORKDIR /usr/src/app
+WORKDIR /share/usr/src/app
 
 # Clone FUXA repository
 RUN git clone https://github.com/frangoteam/FUXA.git
 
 # Install server dependencies
-WORKDIR /usr/src/app/FUXA/server
+WORKDIR /share/usr/src/app/FUXA/server
 RUN npm install
 RUN apt-get update && apt-get install -y sqlite3 libsqlite3-dev && \
     apt-get autoremove -yqq --purge && \
