@@ -15,6 +15,7 @@ arch:
   - i386
 map:
   - share:rw
+  - addons:rw
 startup: services
 ports:
   1881/tcp: 1881
