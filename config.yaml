@@ -16,6 +16,7 @@ arch:
 map:
   - share:rw
   - addons:rw
+  - config:rw
 startup: services
 ports:
   1881/tcp: 1881
