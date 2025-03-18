@@ -1,7 +1,7 @@
 name: "FUXA by SmartLiving.Rocks"
 description: "Easy and Web-based Process Visualization (SCADA/HMI/Dashboard) software - now for Home Assistant"
 image: "frangoteam/fuxa"
-version: "1.0.3"
+version: "1.2.4"
 url: "https://github.com/SmartLiving-Rocks/FUXA/"
 slug: "fuxa-slr"
 webui: "http://[HOST]:[PORT:1881]/home"
