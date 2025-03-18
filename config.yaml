@@ -1,11 +1,16 @@
 name: "FUXA by SmartLiving.Rocks"
 description: "Easy and Web-based Process Visualization (SCADA/HMI/Dashboard) software - now for Home Assistant"
-version: "1.0.1"
+image: "frangoteam/fuxa"
+version: "1.0.3"
 url: "https://github.com/SmartLiving-Rocks/FUXA/"
 slug: "fuxa-slr"
 webui: "http://[HOST]:[PORT:1881]/home"
 panel_icon: mdi:dog
 panel_title: FUXA
+environment:
+  LOG_LEVEL: "info"
+options: {}
+schema: {}
 init: false
 arch:
   - aarch64
@@ -14,9 +19,18 @@ arch:
   - armv7
   - i386
 map:
-  - share:rw
-  - addons:rw
-  - config:rw
+  - type: addon_config
+    read_only: False
+    path: /usr/src/app/FUXA/server/_appdata
+  - type: share
+    read_only: False
+    path: /usr/src/app/FUXA/server/_db
+  - type: media
+    read_only: False
+    path: /usr/src/app/FUXA/server/_images
+  - type: share
+    read_only: False
+    path: /usr/src/app/FUXA/server/_logs
 startup: services
 ports:
   1881/tcp: 1881
